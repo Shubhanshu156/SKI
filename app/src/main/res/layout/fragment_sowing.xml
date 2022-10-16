@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sowing">
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:text="Sowing"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_gravity="left"
+            android:text="optimal distance(cm)"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:id="@+id/optdist"
+            android:textColor="@color/black"
+            android:hint="get using algorithm"
+            android:layout_gravity="center_horizontal"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_gravity="left"
+            android:text="depth of sowing(cm)"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:hint="depth suggested by app"
+
+            android:id="@+id/optdepth"
+            android:layout_gravity="center_horizontal"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:textSize="22sp"
+            android:text="seed type"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            android:layout_height="wrap_content"
+            android:hint="Crop Type"
+            android:id="@+id/spinner2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

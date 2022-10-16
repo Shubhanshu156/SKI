@@ -1,5 +1,5 @@
 package com.example.droneapplicatio
-
+//import com.
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         val mAuth=FirebaseAuth.getInstance()
         if (mAuth.currentUser!=null){
-            val intent=Intent(this,SignupActivity::class.java)
+            val intent=Intent(this@MainActivity,MainScreen::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
 

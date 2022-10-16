@@ -1,8 +1,8 @@
 package com.example.droneapplicatio
+
 import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -17,6 +17,7 @@ import androidx.core.view.isVisible
 import com.google.firebase.FirebaseException
 import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.*
+
 
 import java.lang.Exception
 import java.util.concurrent.TimeUnit
@@ -48,6 +49,7 @@ class OtpActivity:AppCompatActivity() {
         progressDialog=createProgressDialog("Sending OTP please wait",false)
         progressDialog.show()
         val intent=intent
+//        intent.putExtra()
         phonenumber= intent.getStringExtra("PHONENUMBER").toString()
 
         verify.text="Verify $phonenumber"
@@ -61,7 +63,7 @@ class OtpActivity:AppCompatActivity() {
 
 
                 val credential=PhoneAuthProvider.getCredential(mverificationid!!,code)
-
+                Log.d(TAG, "trying to signin: i am here")
 
                 signInWithPhoneAuthCredential(credential)
 
@@ -79,12 +81,6 @@ class OtpActivity:AppCompatActivity() {
             }
         }
         showtimer(60000)
-
-
-
-
-
-
     }
 
 
@@ -182,7 +178,7 @@ class OtpActivity:AppCompatActivity() {
             }
 
             override fun onCodeSent(
-//                Log.d("welcome","code is sent")
+
                 verificationId: String,
                 token: PhoneAuthProvider.ForceResendingToken
             ) {
@@ -209,6 +205,8 @@ class OtpActivity:AppCompatActivity() {
                 progressDialog.dismiss()
             }
             val intent=Intent(this@OtpActivity, SignupActivity::class.java)
+
+            intent.putExtra("phonenumber",intent.getStringExtra("PHONENUMBER").toString());
             startActivity(intent)
             finish()
             Toast.makeText(this@OtpActivity, "welcome you are Signed-In", Toast.LENGTH_SHORT).show()

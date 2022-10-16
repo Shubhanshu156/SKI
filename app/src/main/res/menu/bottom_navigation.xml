@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Sowing" android:icon="@drawable/sowing"
+        android:id="@+id/sowingfragment"/>
+    <item android:title="insecticide/pesticide" android:icon="@drawable/insec"
+        android:id="@+id/insecticide_fragment"/>
+    <item android:title="irrigation" android:icon="@drawable/water_sprinkler_irrigation_flat_icon_vector_13833146_removebg_preview_1"
+        android:id="@+id/irrigation_fragment"/>
+    <item android:title="Account" android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/accountFragment"/>
+
+</menu>

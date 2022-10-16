@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/insecticide_fragment">
+
+    <fragment
+        android:id="@+id/sowingfragment"
+        android:name="com.example.droneapplicatio.sowing"
+        android:label="fragment_sowing"
+        tools:layout="@layout/fragment_sowing" />
+    <fragment
+        android:id="@+id/insecticide_fragment"
+        android:name="com.example.droneapplicatio.insecticide"
+        android:label="fragment_insecticide"
+        tools:layout="@layout/fragment_insecticide" />
+    <fragment
+        android:id="@+id/irrigation_fragment"
+        android:name="com.example.droneapplicatio.irrigation_fragment"
+        android:label="fragment_irrigation"
+        tools:layout="@layout/fragment_irrigation_fragment" />
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.droneapplicatio.accountfragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_accountfragment" />
+
+
+</navigation>

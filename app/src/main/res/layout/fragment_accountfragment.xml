@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".accountfragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="100dp"
+
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Account"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/useraccountimage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+
+
+            android:src="@drawable/ic_baseline_person_24"
+
+            app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="80dp"
+android:id="@+id/blogpage"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+
+        android:layout_height="wrap_content"
+        android:text="Farmers Around You"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/details"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Details"/>
+
+</LinearLayout>
+
+</FrameLayout>
